@@ -10,6 +10,9 @@ import { DishDetailComponent } from './dish-detail/dish-detail.component';
 import { DishManagerComponent } from './dish-manager/dish-manager.component';
 import { AddDishComponent } from './add-dish/add-dish.component';
 import { EditDishComponent } from './edit-dish/edit-dish.component';
+import { AboutComponent } from './about/about.component';
+import { NewsComponent } from './news/news.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -28,7 +31,10 @@ const routes: Routes = [
 
   ]
   },
-  {path: 'menu', component: DishMenuComponent}
+  {path: 'menu', component: DishMenuComponent},
+  {path: 'about', component:AboutComponent},
+  {path: 'news', component: NewsComponent},
+  {path: 'contact',component:ContactComponent}
 
   // {path: 'dish-list', component: DishListComponent}
 

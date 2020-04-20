@@ -16,6 +16,9 @@ import { AddDishComponent } from './add-dish/add-dish.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { EditDishComponent } from './edit-dish/edit-dish.component';
+import { NewsComponent } from './news/news.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { EditDishComponent } from './edit-dish/edit-dish.component';
     DishDetailComponent,
     DishManagerComponent,
     AddDishComponent,
-    EditDishComponent
+    EditDishComponent,
+    NewsComponent,
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
