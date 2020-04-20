@@ -23,6 +23,7 @@ this.route.params.subscribe(param => {
   console.log(param);
   this.dishService.getDish(param.dishID).subscribe(data => {
     this.dish = data;
+    alert("Truy xuất  thành công");
   })
 })
 }

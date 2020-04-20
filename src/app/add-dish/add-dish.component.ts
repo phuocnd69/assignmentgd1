@@ -21,5 +21,6 @@ export class AddDishComponent implements OnInit {
 addDish(){
   this.dishService.addDish(this.dish).subscribe(data => 
     this.router.navigateByUrl('/admin/dish-manager'));
+    alert("Thêm thành công");
 }
 }

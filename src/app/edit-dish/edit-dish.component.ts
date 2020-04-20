@@ -31,6 +31,7 @@ export class EditDishComponent implements OnInit {
   updateDish(){
     this.dishService.updateDish(this.dish).subscribe(data =>{
       this.router.navigateByUrl('/admin/dish');
+      alert("Cập nhật thành công");
     })
   }
 }

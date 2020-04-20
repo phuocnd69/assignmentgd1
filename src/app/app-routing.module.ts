@@ -34,7 +34,9 @@ const routes: Routes = [
   {path: 'menu', component: DishMenuComponent},
   {path: 'about', component:AboutComponent},
   {path: 'news', component: NewsComponent},
-  {path: 'contact',component:ContactComponent}
+  {path: 'contact',component:ContactComponent},
+  {path: 'dish', component: DishComponent},
+  {path: 'dish/:dishID', component: DishDetailComponent},
 
   // {path: 'dish-list', component: DishListComponent}
 
