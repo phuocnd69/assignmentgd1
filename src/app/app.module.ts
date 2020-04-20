@@ -22,7 +22,7 @@ import { EditDishComponent } from './edit-dish/edit-dish.component';
     AppComponent,
     AdminComponent,
     HomeComponent,
-    DashboardComponent
+    DashboardComponent,
     DishMenuComponent,
     DishComponent,
     DishListComponent,

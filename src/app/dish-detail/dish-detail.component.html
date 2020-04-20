@@ -1,0 +1,11 @@
+<p *ngIf= "dish"> </p>
+    <div class="card h-100">
+        <a href="#"><img style="width: 180px; height: 180px;" class="card-img-top" [src]="dish.img" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">{{dish.name}}</a>
+          </h4>
+          <h5>${{dish.price}}</h5>
+          <p class="card-text">{{dish.desc}}</p>
+        </div>
+      </div>
