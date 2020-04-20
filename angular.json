@@ -23,7 +23,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.scss",
+              "src/assets/css/admin.scss",
+              "src/assets/css/bar.scss",
+              "src/assets/css/boostrap.scss",
+              "src/assets/css/style.scss",
+              "src/assets/css/slide.scss"
             ],
             "scripts": []
           },

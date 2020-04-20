@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdminComponent } from './admin/admin.component';
 import { HomeComponent } from './home/home.component';
-import { DashboardComponent} from './dashboard/dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { DishMenuComponent } from './dish-menu/dish-menu.component';
 import { DishComponent } from './dish/dish.component';
 import { DishListComponent } from './dish-list/dish-list.component';
