@@ -12,6 +12,7 @@ export class DishManagerComponent implements OnInit {
   page = 1;
   pageSize = 5; 
   dishs: Dish[];
+  name:String;
   constructor(private dishService: DishService) { }
 
   ngOnInit(): void {
@@ -22,5 +23,23 @@ export class DishManagerComponent implements OnInit {
       this.dishs = data;
       
     })
+  }
+
+  removeDish(id){
+    this.dishService.removeDish(id).subscribe(response =>{
+      this.dishs = this.dishs.filter(dish => dish.id !==response.id);
+      alert("Xóa thành công");
+    })
+  }
+
+  search(){
+    if(this.name !=""){
+      this.dishs=this.dishs.filter(data =>{
+        return data.name.toLocaleLowerCase().match(this.name.toLocaleLowerCase());
+      });
+    }else if(this.name == ""){
+      this.ngOnInit();
+    }
+    
   }
 }

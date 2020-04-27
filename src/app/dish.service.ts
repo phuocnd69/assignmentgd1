@@ -22,16 +22,17 @@ import{ Observable} from 'rxjs';
     }
   
     getDish(id) : Observable<Dish> {
-  
       return this.http.get<Dish> (`${this.api}/${id}`);
     }
     
   addDish(dish): Observable<Dish>{
-      return this.http.post<Dish>(`${this.api}`, dish)
+      return this.http.post<Dish>(`${this.api}`, dish);
   }
 
   updateDish(dish): Observable<Dish>{
     return this.http.put<Dish>(`${this.api}/${dish.id}`, dish);
   }
-  
+  removeDish(id): Observable<Dish>{
+    return this.http.delete<Dish>(`${this.api}/${id}`);
+  }
   }
