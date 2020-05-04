@@ -32,14 +32,16 @@ export class DishManagerComponent implements OnInit {
     })
   }
 
-  search(){
-    if(this.name !=""){
-      this.dishs=this.dishs.filter(data =>{
-        return data.name.toLocaleLowerCase().match(this.name.toLocaleLowerCase());
-      });
-    }else if(this.name == ""){
-      this.ngOnInit();
-    }
+  // search(){
+  //   if(this.name !=""){
+  //     this.dishs=this.dishs.filter(data =>{
+  //       return data.name.toLocaleLowerCase().match(this.name.toLocaleLowerCase());
+  //     });
+  //   }else if(this.name == ""){
+  //     this.ngOnInit();
+  //   }
     
-  }
+  // }
+
+  
 }

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Ng2SearchPipeModule} from 'ng2-search-filter';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +21,7 @@ import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +41,7 @@ import { AboutComponent } from './about/about.component';
   ],
   imports: [
     BrowserModule,
+    Ng2SearchPipeModule,
     AppRoutingModule,
     RouterModule,
     HttpClientModule,
