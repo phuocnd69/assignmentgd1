@@ -1,11 +1,129 @@
-<p *ngIf= "dish"> </p>
-    <div class="card h-100">
-        <a href="#"><img style="width: 180px; height: 180px;" class="card-img-top" [src]="dish.img" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">{{dish.name}}</a>
-          </h4>
-          <h5>${{dish.price}}</h5>
-          <p class="card-text">{{dish.desc}}</p>
+<!-- //header -->
+<header class="py-sm-3 pt-3 pb-2">
+	<div class="container">
+			<div id="logo">
+				<h1> <a routerLink="/home"> Kampong chicken house</a></h1>
+			</div>
+		<!-- nav -->
+		<nav class="d-lg-flex">
+
+			<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+			<input type="checkbox" id="drop" />
+			<ul class="menu mt-2 ml-auto">
+				<li class="active"><a routerLink="/home">Trang chủ</a></li>
+				<li class=""><a routerLink="/about">Giới thiệu</a></li>
+				<li class=""><a routerLink="/menu">Thực đơn</a></li>
+				<li class=""><a routerLink="/news">Tin tức</a></li>
+				<li class=""><a routerLink="/contact">Liên hệ với chúng tôi</a></li>
+			</ul>
+			<div class="login-icon ml-2">
+				<a class="user" href="#"> Gọi ngay</a>
+			</div>
+		</nav>
+		<div class="clear"></div>
+		<!-- //nav -->
+	</div>
+</header>
+<!-- //header -->
+    
+    <section class="banner-bottom py-5">
+        <div class="container py-md-5" *ngIf= "dish">
+            <!-- product right -->
+            <div class="left-ads-display wthree">
+                <div class="row">
+                    <div class="desc1-left col-md-6">
+                        <img class="card-img-top" [src]="dish.img" alt="">
+                    </div>
+                    <div class="desc1-right col-md-6 pl-lg-3">
+                        <a href="#">{{dish.name}}</a>
+                        <h5>${{dish.price}}</h5>
+                        <div class="available mt-3">
+                            <p class="card-text">{{dish.desc}}</p>
+                            <form action="#" method="post" class="w3pvt-newsletter subscribe-sec">
+                                <button class="btn btn-primary">Liên hệ đặt bàn</button>
+                            </form>
+                        </div>
+                        <div class="share-desc mt-5">
+                            <div class="share text-left">
+                                <h4>Xem thêm tại: </h4>
+                                <div class="social-ficons mt-4">
+                                    
+                                        <a href="https://www.facebook.com/kampong.vn/" class="btn btn-primary"><span class="fa fa-facebook"></span> Facebook</a>
+                                        <a href="http://kampongchickenhouse.com.vn/" class="btn btn-danger ml-3 "><span class="fa fa-google"></span>Google</a>
+                                    
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row sub-para-w3pvt my-5">
+
+                    <h3 class="shop-sing">Kampong Chicken House</h3>
+                    <p>Thương hiệu Kampong Chicken House ra đời đơn giản chỉ từ sự đam mê ẩm thực và tình yêu đặc biệt với món Cơm gà của một nữ biên tập viên truyền hình. Nhưng không chỉ là một quán ăn bình thường nhằm thỏa mãn đam mê của người sáng lập, Kampong Chicken House được đầu tư xây dựng một cách chuyên nghiệp, bài bản, được kỳ vọng sẽ trở thành một trong những hệ thống nhà hàng chuyên biệt về gà tốt nhất tại Việt Nam.</p>
+                    <p class="mt-3 italic-blue">
+                      Ra đời từ tháng 04 năm 2015 với tên gọi Kampong Chicken House, đây là một mô hình Nhà hàng Á phục vụ nhanh, lý tưởng dành cho xã hội hiện đại. Kể từ khi thành lập cho tới nay, Kampong Chicken House luôn được khách hàng nhắc tới là mô hình nhà hàng đầu tiên phục vụ chuyên biệt Cơm gà Hải Nam chuẩn phong vị Singapore. Thế nhưng điểm khác biệt lớn nhất tạo nên ưu thế là Kampong Chicken House luôn sử dụng nguyên liệu gà tươi thả vườn, cho ra chất lượng thịt thơm ngọt kết hợp cùng các loại nước sốt được làm tươi trong ngày. Bên cạnh đó, với không gian xanh, sạch, phong cách phục vụ chuyên nghiệp cùng thực đơn đa dạng các món ăn từ gà ta được chế biến theo phong vị Châu Á hiện đại cũng là điểm gây ấn tượng với các khách hàng đã từng đến với Kampong Chicken House
+                    </p>
+                    <p class="mt-3">Có khá nhiều các nhà hàng ngon chuyên về những món gà, nhưng không phải nhà hàng nào cũng chú trọng chất lượng của từng món ăn được như nhà hàng Kampong Chicken House! Để kể về những món ngon ở Kampong Chicken House có lẽ bạn sẽ phải mất cả tiếng đồng hồ mới kể hết được, bởi hương vị món ăn ở đây nổi tiếng thơm ngon từ những món khai vị, món chính, món ăn kèm đến cả những món tráng miệng sau bữa ăn cũng thật hấp dẫn. Đặt biệt Gà ở Kampong Chicken House đều là gà ta thả vườn nên không chỉ thơm ngon, ngọt đậm mà còn an toàn nữa.</p>
+                </div>
+
+            </div>
         </div>
-      </div>
+    </section>
+
+    <!-- footer -->
+<footer class="py-5">
+	<div class="container py-sm-3">
+		<div class="row footer-grids">
+			<div class="col-lg-3 col-sm-6 mb-lg-0 mb-sm-5 mb-4">
+				<h4 class="mb-4"><span class="fa fa-cutlery"></span> Crispy</h4>
+				<p class="mb-3">Onec Consequat sapien ut cursus rhoncus. Nullam dui mi, vulputate ac metus semper quis luctus sed.</p>
+				<h5>Trusted by <span>500+ People</span> </h5>
+			</div>
+			<div class="col-lg-3 col-sm-6 mb-md-0 mb-sm-5 mb-4">
+				<h4 class="mb-4">Address Info</h4>
+				<p><span class="fa mr-2 fa-map-marker"></span>64d canal street TT 3356 <span>Newyork, NY.</span></p>
+				<p class="phone py-2"><span class="fa mr-2 fa-phone"></span> +1(12) 123 456 789 </p>
+				<p><span class="fa mr-2 fa-envelope"></span><a href="mailto:info@example.com">info@example.com</a></p>
+			</div>
+			<div class="col-lg-2 col-sm-6 mb-lg-0 mb-sm-5 mb-4">
+				<h4 class="mb-4">Quick Links</h4>
+				<ul>
+					<li><a href="#">Order Online</a></li>
+					<li class="my-2"><a href="#">Healthy Crispy</a></li>
+					<li><a href="#">Support Helpline</a></li>
+					<li class="mt-2"><a href="#">Privacy Ploicy</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<h4 class="mb-4">Subscribe Us</h4>
+				<p class="mb-3">Subscribe to our newsletter</p>
+				<form action="#" method="post" class="d-flex">
+					<input type="email" id="email" name="EMAIL" placeholder="Enter your email here" required="">
+					<button type="submit" class="btn">Subscribe</button>
+				</form>
+				<div class="icon-social mt-3">
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-facebook"></span>
+					</a>
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-twitter"></span>
+					</a>
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-dribbble"></span>
+					</a>
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-pinterest"></span>
+					</a>
+					<a href="#" class="button-footr">
+						<span class="fa mx-2 fa-google-plus"></span>
+					</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- //footer -->
