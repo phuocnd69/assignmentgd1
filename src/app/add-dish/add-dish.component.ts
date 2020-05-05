@@ -11,7 +11,6 @@ import { FormGroup,FormControl, Validators } from '@angular/forms';
 })
 export class AddDishComponent implements OnInit {
     form = new FormGroup({
-      id: new FormControl('',Validators.required),
       name: new FormControl('', Validators.required),
       price: new FormControl('', Validators.required),
       img: new FormControl('', Validators.required),
@@ -36,8 +35,7 @@ addDish(){
 }
 
 clear(){
-  var id = <HTMLInputElement>document.getElementById("id");
-  id.value = null;
+
   var name = <HTMLInputElement>document.getElementById("name");
   name.value = null;
   var price = <HTMLInputElement>document.getElementById("price");
