@@ -1,12 +1,5 @@
 <form name="form" [formGroup]="form">
     <div class="form-group">
-        <label for="">ID</label>
-        <input type="text" class="form-control" formControlName="id" id="id" [(ngModel)]="dish.id" [ngClass]="{'is-invalid':form.get('id').touched && form.get('id').invalid}" required placeholder="nhập Mã sản phẩm">
-       <div class="invalid-feedback">
-              <div>Mã món ăn không được để trống</div>
-            </div>
-      </div>
-    <div class="form-group">
       <label for="">Name</label>
       <input type="text" class="form-control" formControlName="name" id="name"  [(ngModel)]="dish.name" [ngClass]="{'is-invalid':form.get('name').touched && form.get('name').invalid}" required placeholder="nhập tên sản phẩm">
       <div class="invalid-feedback">
